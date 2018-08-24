@@ -7,10 +7,10 @@ You can create your own style to format the bibliographic entries in Reference p
 Preview
 =======
 
-<img src="./images/s1.png" width="200">
-<img src="./images/s2.png" width="200">
-<img src="./images/s3.png" width="200">
-<img src="./images/s4.png" width="200">
+![Screenshot1](./images/s1.png)
+![Screenshot2](./images/s2.png)
+![Screenshot3](./images/s3.png)
+![Screenshot4](./images/s4.png)
 
 
 Usage
