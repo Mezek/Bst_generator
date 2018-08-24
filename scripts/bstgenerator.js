@@ -1945,8 +1945,7 @@ function saveFile(){
 	document.getElementById('saveButton').onclick = function(event){
 		var data = document.getElementById('data').value;
 		var filename = document.getElementById('filename').value;
-		var json = JSON.stringify(data),
-		blob = new Blob([json], {type: "octet/stream"}),
+		blob = new Blob([data], {type: "text/plain"}),
 		url = window.URL.createObjectURL(blob);
   		this.href = url;
 		this.target = '_blank';
