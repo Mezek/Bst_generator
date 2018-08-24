@@ -1783,8 +1783,8 @@ function finalResult() {
 
 	var put3 = document.createElement("div");
 	put3.id = "buttonContainer";
-	put3.innerHTML = "<p>The most convenient way to save the above options is to save them as generated <span class='text-italic'>bibgen.dbj</span> file (Save to disk). This way requires HTML5.</p>" +
-		"<p>Another possibility is to save the options as plain text (Save Parameters) and to prepare <span class='text-italic'>bibgen.dbj</span> file by hand.</p>";
+	put3.innerHTML = "<p>The most convenient way to save the above options is to save them as generated <span class='text-italic'>bibgen.dbj</span> file (Save File). This way requires HTML5.</p>" +
+		"<p>Another possibility is to save the options as plain text (Save only Parameters) and to prepare <span class='text-italic'>bibgen.dbj</span> file by hand.</p>";
 	var putIn3 = document.createElement("input");
 	putIn3.type = "button";
 	putIn3.id = "saveButton";
@@ -1837,18 +1837,18 @@ function goToFormular() {
 						fileContent +
 					"</textarea>" +
 			"</p>" +
-			"<p id='downloadify'>" +
-				"You must have Flash 10 installed to download this file." +
+			"<p>" +
+				"<a class='gradient_button' id='link' target='_blank' download='file.txt' onclick='saveFile()'>Save File</a>" +
 			"</p>" +
-			"<p><a class='gradient_button' alt='Download' title='Save parameters' download='" +
-				bstGenFileName +
-			".txt' href='data:text/plain," + getParameters(lDef) + "' onclick='highLightR(3)'>Save only Parameters</a></p>" +
+			"<p>" +
+				"<a class='gradient_button' alt='Download' title='Save parameters' download='" +
+				bstGenFileName + ".txt' href='data:text/plain," + getParameters(lDef) + "' onclick='highLightR(3)'>Save only Parameters</a>" +
+			"</p>" +
 		"</form>";
 	
 	// another format href='data:application/octet-stream'	
 	
 	divB.parentNode.replaceChild(divF,divB);	
-	downLoadify();
 }
 
 // Get parameters
@@ -1941,6 +1941,19 @@ function setIf(x,y) {
 	document.getElementById(x).value = y;
 }
 
+function saveFile(){
+	var data = function(){return document.getElementById('data').value};
+	var filename = function(){return document.getElementById('filename').value};
+	var properties = {type: 'text/plain'};
+	try {
+  		file = new File(data, filename, properties);
+	} catch (e) {
+	  	file = new Blob(data, properties);
+	}
+	var url = URL.createObjectURL(file);
+	document.getElementById('link').href = url;
+}
+	
 function downLoadify(){
 	Downloadify.create('downloadify',{
 		filename: function(){
