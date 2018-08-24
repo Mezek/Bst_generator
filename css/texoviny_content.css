@@ -1,6 +1,6 @@
 /*
-Author: Erik Bartos 2011
-Date: Wednesday, February 02 2011
+Author: Erik Bartos 2011, 2018
+Description: CSS for Bst generator
 */
 
 #mainContainer
@@ -170,3 +170,10 @@ Date: Wednesday, February 02 2011
     border-right-color: #ffcc33;
 }
 	
+span.text-bold
+{
+	font-weight: bold;
+	color: #2f2f2f; /*#203c60;*/
+}
+span.text-italic { font-style: italic; }
+span.text-normal { font-style: normal; }
