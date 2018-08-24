@@ -1838,7 +1838,7 @@ function goToFormular() {
 					"</textarea>" +
 			"</p>" +
 			"<p>" +
-				"<a class='gradient_button' id='link' target='_blank' download='file.txt' onclick='saveFile()'>Save File</a>" +
+				"<a class='gradient_button' id='link' download='file.txt' onclick='saveFile()'>Save File</a>" +
 			"</p>" +
 			"<p>" +
 				"<a class='gradient_button' alt='Download' title='Save parameters' download='" +
@@ -1847,7 +1847,7 @@ function goToFormular() {
 		"</form>";
 	
 	// another format href='data:application/octet-stream'	
-	
+	saveFile();
 	divB.parentNode.replaceChild(divF,divB);	
 }
 
