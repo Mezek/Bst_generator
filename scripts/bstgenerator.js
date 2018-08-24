@@ -1838,7 +1838,7 @@ function goToFormular() {
 					"</textarea>" +
 			"</p>" +
 			"<p>" +
-				"<a class='gradient_button' id='link' download='file.txt' onclick='saveFile()'>Save File</a>" +
+				"<a class='gradient_button' alt='Download' id='saveButton' href='#'>Save File</a>" +
 			"</p>" +
 			"<p>" +
 				"<a class='gradient_button' alt='Download' title='Save parameters' download='" +
@@ -1847,8 +1847,8 @@ function goToFormular() {
 		"</form>";
 	
 	// another format href='data:application/octet-stream'	
-	saveFile();
 	divB.parentNode.replaceChild(divF,divB);	
+	saveFile();
 }
 
 // Get parameters
@@ -1942,16 +1942,16 @@ function setIf(x,y) {
 }
 
 function saveFile(){
-	var data = function(){return document.getElementById('data').value};
-	var filename = function(){return document.getElementById('filename').value};
-	var properties = {type: 'text/plain'};
-	try {
-  		file = new File(data, filename, properties);
-	} catch (e) {
-	  	file = new Blob(data, properties);
+	document.getElementById('saveButton').onclick = function(event){
+		var data = function(){return document.getElementById('data').value};
+		var filename = function(){return document.getElementById('filename').value};
+		var json = JSON.stringify(data),
+		blob = new Blob([json], {type: "octet/stream"}),
+		url = window.URL.createObjectURL(blob);
+  		this.href = url;
+		this.target = '_blank';
+		this.download = filename;
 	}
-	var url = URL.createObjectURL(file);
-	document.getElementById('link').href = url;
 }
 	
 function downLoadify(){
