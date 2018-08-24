@@ -187,3 +187,18 @@ span.text-normal { font-style: normal; }
 {
 	color: gray;
 }
+
+a#download-file
+{
+	margin: auto;
+	display: block;
+	width: 150px;
+	height: 45px;
+	background: url("../images/download.png") top;
+	text-indent: -9999em;
+}
+
+a#download-file:hover
+{
+	background-position: 0 -45px;
+}
