@@ -1,0 +1,172 @@
+/*
+Author: Erik Bartos 2011
+Date: Wednesday, February 02 2011
+*/
+
+#mainContainer
+{
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	/* vertical-align: middle;*/
+	background-color: #fff;
+	border: 1px solid #fff;
+}
+
+#selection
+{
+	width: 100%;
+}
+
+#topContainer
+{
+	vertical-align: top;
+	margin: 2em 0 0 0;
+}
+
+.topText
+{
+	margin: 0 5px 0 5px;
+	color: #204a87;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+
+#topHeaderMark
+{
+	float: right;
+	font-variant: small-caps;
+}
+
+#previewContainer
+{
+	background-color: #ccddcc;
+}
+
+#previewDiv
+{
+	/*min-height: 6em;*/
+}
+
+.outerRectangle
+{
+	margin-top: .7em;
+	margin-right: auto;
+	margin-bottom: .7em;
+	margin-left: auto;
+	padding: 5px;
+	width: 97%;
+}
+
+.innerRectangle
+{
+	margin: 1.5em 5px 1.5em 5px;
+	min-height: 120px;
+	position: relative;
+}
+
+#chooseContainer
+{
+	margin: 1em auto 1em auto;
+	padding: 5px;
+	background-color: #ddeedd;
+}
+
+#forma
+{
+}
+
+#divPut
+{
+	min-height: 10em;
+	/*margin-bottom: 1.2em;*/
+}
+
+#buttonContainer
+{
+	position: relative;
+	padding: 1em;
+}
+
+#submitButton
+{
+	/*float: right;*/
+	margin-left: .7em;
+	width: 7em;
+}
+
+#backButton
+{
+	width: 7em;
+}
+
+#selectedOptions
+{
+	margin: 1em 0 2em 0;
+}
+
+#choosenParameters
+{
+	background-color: #ddeedd;
+}
+
+#Param
+{
+}
+
+#divForma
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#step1, #step2, #step3
+{
+	margin: 1.7em 0 1.7em 0;
+}
+
+#bottom
+{
+	margin: 1em 0px 4em 0px;
+}
+
+.textRadioBox
+{
+    margin-left: 5pt;
+}
+
+.textRadioBox:active
+{
+    color: red;
+}
+
+.textRadioBox:hover
+{
+    color: green;
+}
+
+.textComment
+{
+    color: #6f6f6f;
+}
+
+ .displayTd
+ {
+	display: table-cell;
+ }
+
+.testClass
+{
+    color: #ffff33;
+    background-color: #333333;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top-color: #ffcc33;
+    border-bottom-color: #ffcc33;
+    border-left-color: #ffcc33;
+    border-right-color: #ffcc33;
+}
+	
