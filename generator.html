@@ -2,13 +2,63 @@
 layout: default
 title: Generator
 ---
-<div class="generator">
-  <p><a id="generator"><div id="TFR"></div></a></p>
-  <p>Test</p>    
-  <script>
-    alert("javascript is working");
-  </script>
-  <script src="./scripts/bstgenerator.js">
-    baseFunction();
-  </script> 
-</div><!-- /.generator -->
+<div id="mainContainer">
+
+	<div id="note">
+		My notes.
+	</div>
+	
+	<div id="selection">
+
+		<div id="topContainer">
+			<span id="topHeaderText" class="topText">Title</span>
+			<span id="topHeaderMark">It seems that Javascript is not properly working!</span>
+
+			<div id="previewContainer" class="outerRectangle">
+				<div id="previewDiv" class="innerRectangle">
+					&nbsp;
+				</div>
+			</div>
+
+		</div>
+
+		<div id="buttonContainer">
+			<input type="button" id="backButton" value="Previous" />
+			<input type="button" id="submitButton" value="Next" />
+		</div>
+				
+		<div id="chooseContainer" class="outerRectangle">
+			<form id="forma" action="" class="innerRectangle">
+				<div>
+					<input type="hidden" id="hidValue" value="" />
+					<input type="hidden" id="numerical" value="" />
+					<input type="hidden" id="myTemp" value="" />
+				</div>
+				<div id="divPut">&nbsp;</div>
+			</form>
+		</div>
+		
+		<div id="selectedOptions">
+			<span id="selectedText" class="topText">Selected options</span>
+
+			<div id="choosenParameters" class="outerRectangle">
+				<div id="Param" class="innerRectangle">
+					&nbsp;
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	
+	<div id="bottom">
+		&nbsp;
+	</div>
+</div><!-- /.mainContainer -->
+
+<script>
+  alert("javascript is working");
+</script>
+<script src="./scripts/bstgenerator.js">
+  baseFunction();
+</script>
