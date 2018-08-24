@@ -4,6 +4,7 @@ Bst generator
 The javascript generator of BST files for BibTeX.
 You can create your own style to format the bibliographic entries in Reference part of your manuscript.
 
+
 Preview
 =======
 
