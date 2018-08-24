@@ -1842,7 +1842,7 @@ function goToFormular() {
 			"</p>" +
 			"<p><a class='gradient_button' alt='Download' title='Save parameters' download='" +
 				bstGenFileName +
-			".txt' href='data:text/plain," + getParameters(lDef) + "' onclick='highLightR(3)'>Save Parameters</a></p>" +
+			".txt' href='data:text/plain," + getParameters(lDef) + "' onclick='highLightR(3)'>Save only Parameters</a></p>" +
 		"</form>";
 	
 	// another format href='data:application/octet-stream'	
