@@ -177,3 +177,13 @@ span.text-bold
 }
 span.text-italic { font-style: italic; }
 span.text-normal { font-style: normal; }
+
+.active
+{
+	color: #000000;
+}
+
+.inactive
+{
+	color: gray;
+}

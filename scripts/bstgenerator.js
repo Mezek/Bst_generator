@@ -1,9 +1,8 @@
-// Id:
 // File: bstgenerator.js
-// Version: 0.91
-// (c) 2012 Erik Bartoš
+// Version: 0.92
+// (c) 2018 Erik Bartoš
 
-var bstGenVersion = "0.91";
+var bstGenVersion = "0.92";
 var bstGenFileName = "bibgen";
 var optDef = [];
 var prevDef = [];
