@@ -1943,8 +1943,8 @@ function setIf(x,y) {
 
 function saveFile(){
 	document.getElementById('saveButton').onclick = function(event){
-		var data = function(){return document.getElementById('data').value};
-		var filename = function(){return document.getElementById('filename').value};
+		var data = document.getElementById('data').value;
+		var filename = document.getElementById('filename').value;
 		var json = JSON.stringify(data),
 		blob = new Blob([json], {type: "octet/stream"}),
 		url = window.URL.createObjectURL(blob);
