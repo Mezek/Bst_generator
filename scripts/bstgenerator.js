@@ -1840,7 +1840,7 @@ function goToFormular() {
 			"<p id='downloadify'>" +
 				"You must have Flash 10 installed to download this file." +
 			"</p>" +
-			"<p><a class='gradient-button-1' alt='Download' title='Download file' download='" +
+			"<p><a class='gradient_button' alt='Download' title='Save parameters' download='" +
 				bstGenFileName +
 			".txt' href='data:text/plain," + getParameters(lDef) + "' onclick='highLightR(3)'>Save Parameters</a></p>" +
 		"</form>";
