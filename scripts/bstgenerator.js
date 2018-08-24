@@ -1784,7 +1784,7 @@ function finalResult() {
 
 	var put3 = document.createElement("div");
 	put3.id = "buttonContainer";
-	put3.innerHTML = "<p>The most convenient way to save the options above is to save them as generated <span class='text-italic'>bibgen.dbj</span> file (Save to disk). However, this way requires working Flash.</p>" +
+	put3.innerHTML = "<p>The most convenient way to save the above options is to save them as generated <span class='text-italic'>bibgen.dbj</span> file (Save to disk). This way requires HTML5.</p>" +
 		"<p>Another possibility is to save the options as plain text (Save Parameters) and to prepare <span class='text-italic'>bibgen.dbj</span> file by hand.</p>";
 	var putIn3 = document.createElement("input");
 	putIn3.type = "button";
