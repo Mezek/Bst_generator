@@ -1837,7 +1837,7 @@ function goToFormular() {
 						fileContent +
 					"</textarea>" +
 			"</p>" +
-			"<ul class='projects'><li>" +
+			"<ul class='inlineList'><li>" +
 				"<a class='gradient_button' alt='Download' id='saveButton' href='#'>Save File</a>" +
 			"</li>" +
 			"<li>" +
