@@ -208,3 +208,12 @@ span.text-normal { font-style: normal; }
  	background-image: -o-linear-gradient(top, #26759e, #133d5b);
  	background-image: linear-gradient(to bottom, #26759e, #133d5b);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#26759e, endColorstr=#133d5b);
 }
+
+ul.inlineList {
+	margin: 10px;
+}
+
+ul.inlineList li {
+	list-style: none;
+	display: inline-block;
+}
