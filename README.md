@@ -9,7 +9,7 @@ The contributors can be found in the file "![AUTHORS](AUTHORS)".
 Usage
 ===================
 
-The port of the script is on the ![project web page](./generator.html).
+The port of the script is on the ![project web page](https://mezek.github.io/Bst_generator/generator.html).
 
 Preview
 =======
