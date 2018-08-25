@@ -57,6 +57,7 @@ Description: CSS for Bst generator
 	margin-left: auto;
 	padding: 5px;
 	width: 97%;
+	border-radius: 15px;
 }
 
 .innerRectangle
