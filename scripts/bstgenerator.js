@@ -1837,13 +1837,13 @@ function goToFormular() {
 						fileContent +
 					"</textarea>" +
 			"</p>" +
-			"<p>" +
+			"<ul class="projects"><li>" +
 				"<a class='gradient_button' alt='Download' id='saveButton' href='#'>Save File</a>" +
-			"</p>" +
-			"<p>" +
+			"</li>" +
+			"<li>" +
 				"<a class='gradient_button' alt='Download' title='Save parameters' download='" +
 				bstGenFileName + ".txt' href='data:text/plain," + getParameters(lDef) + "' onclick='highLightR(3)'>Save only Parameters</a>" +
-			"</p>" +
+			"</li></ul>" +
 		"</form>";
 	
 	// another format href='data:application/octet-stream'	
