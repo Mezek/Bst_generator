@@ -6,6 +6,11 @@ You can create your own style to format the bibliographic entries in Reference p
 
 The contributors can be found in the file "![AUTHORS](AUTHORS)".
 
+Usage
+===================
+
+The port of the script is on the ![project web page](./generator.html).
+
 Preview
 =======
 
@@ -14,8 +19,7 @@ Preview
 ![Screenshot3](./images/s3.png)
 ![Screenshot4](./images/s4.png)
 
+Bugs and remarks
+================
 
-Usage
-===================
-
-Web porting is under construction...
+Bugs can be reported via the ![Issue Tracker](https://github.com/Mezek/Bst_generator/issues) of Github.
