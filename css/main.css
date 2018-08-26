@@ -18,3 +18,9 @@ a:hover {
 	max-width: 1024px;
 	margin: 0 auto;
 }
+
+footer {
+	border-top: 1px solid #d5d5d5;
+	font-size: .8em;
+	margin: 20px auto;
+}
