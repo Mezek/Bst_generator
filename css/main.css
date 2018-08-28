@@ -28,3 +28,11 @@ footer {
 	font-size: .8em;
 	margin: 20px auto;
 }
+
+.copyright {
+	float: left;
+}
+
+.publication {
+	float: right;
+}
