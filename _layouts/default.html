@@ -1,56 +1,52 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css">
-    <link rel="stylesheet" type="text/css" media="screen,projection,print" charset="utf-8" href="./css/texoviny_content.css" />
-    <link rel="stylesheet" type="text/css" media="all" charset="utf-8" href="./scripts/niftyCorners.css" />
-    <link rel="icon" type="image/x-icon" href="./images/favicon_bst.ico" />
-    <script type="text/javascript" src="./scripts/niftycube.js"></script>
-    <script type="text/javascript" src="./scripts/bstgenerator.js"></script>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,maximum-scale=2">
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css">
+	<link rel="stylesheet" type="text/css" media="screen,projection,print" charset="utf-8" href="/css/texoviny_content.css" />
+	<link rel="icon" type="image/x-icon" href="/images/favicon_bst.ico" />
+	<script type="text/javascript" src="/scripts/bstgenerator.js"></script>
+	<title>{{ page.title }} | Erik Bartoš | Physicists, Digital Publisher, Enthusiast, Sci-fi fan.</title>
 
-{% seo %}
-  </head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1269766-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-1269766-2');
+	</script>
+</head>
 
-  <body>
+<body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <!--<h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>-->
-          <img src="./images/bst_generator_title.png" alt="Header_image">
-        </header>
-    </div>
+	<!-- HEADER -->
+	<div id="header_wrap" class="outer">
+		<header class="inner">
+			<!--<h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>-->
+			<img src="/images/bst_generator_title.png" alt="Header_image">
+		</header>
+	</div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        {{ content }}
-      </section>
-    </div>
+	<!-- MAIN CONTENT -->
+	<div id="main_content_wrap" class="outer">
+		<section id="main_content" class="inner">
+			{{ content }}
+		</section>
+	</div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        {% if site.github.is_project_page %}
-        <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+	<!-- FOOTER  -->
+	<div id="footer_wrap" class="outer">
+		<footer class="inner">
+			{% if site.github.is_project_page %}
+			<p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+			{% endif %}
+			<p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+		</footer>
+	</div>
 
-    {% if site.google_analytics %}
-      <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-      </script>
-    {% endif %}
-  </body>
+</body>
 </html>
