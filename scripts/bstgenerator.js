@@ -1673,7 +1673,7 @@ function createBody(i,a) {
 	var dp = document.getElementById("Param"); 
 	dp.innerHTML = getParameters(i);
 	
-	Nifty("div.outerRectangle","normal transparent");
+	// ("div.outerRectangle","normal transparent");
 	return i;
 }
 
@@ -1799,7 +1799,7 @@ function finalResult() {
 	save.name = "saveButton";
 	save.setAttribute("onclick", "goToFormular()");
 
-	Nifty("div.outerRectangle","normal transparent");
+	// Nifty("div.outerRectangle","normal transparent");
 	highLightR(2);	
 }
 
