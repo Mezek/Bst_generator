@@ -217,7 +217,7 @@ optDef[k] = [
 ]
 prevDef[k] = [
 	"<td><span id='TFR'>&nbsp;</span></td>",
-	"1",
+	"Next previews are not yet finished",
 	"2"
 ]	
 k++;
@@ -229,7 +229,7 @@ optDef[k] = [
 ]
 prevDef[k] = [
 	"<td><span id='TFR'>&nbsp;</span></td>",
-	"1",
+	"Next previews are not yet finished",
 	"2"
 ]
 k++;
@@ -241,7 +241,7 @@ optDef[k] = [
 ]
 prevDef[k] = [
 	"<td><span id='TFR'>&nbsp;</span></td>",
-	"1",
+	"Next previews are not yet finished",
 	"2"
 ]
 k++;
